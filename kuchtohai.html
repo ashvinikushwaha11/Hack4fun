@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter || Learningrobo</title>
+    <link rel="stylesheet" href="LiveCounter.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">            
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">            
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(195, 244, 217, 0.466),rgba(255, 255, 255, 0.5)),url(snowman-4688913_1920.jpg);
+    background-size: cover;
+    text-align: center;
+    position: relative;
+}
+.row{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.col{
+    flex-basis: 22%;
+    text-align: center;
+    color: #555;
+}
+.counter-box{
+    width: 100%;
+    height: 100%;
+    background: #12192c;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 20px -4px #66676c;
+    color:#fff;
+    opacity: 0.7;
+    border: solid #12192c;
+    box-shadow:none;
+}
+h2,span{
+    display: inline-block;
+    margin: 15px 0;
+    font-size: 50px;
+    color: #fff;
+}
+.counter-box .fa{
+    font-size: 40px;
+    color: rgba(16, 211, 97, 0.603);
+    display: block;
+}
+    </style>
+    
+</head>
+<body>
+    <div class="hero">
+        <div class="row">
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-paw"></i>
+                    <h2 class="counter">450</h2><span>+</span>
+                    <h4>SAVED DOGS</h4>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter">190</h2><span>+</span>
+                    <h4>HAPPY CLIENTS</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-dog   "></i>
+                    <h2 class="counter">250</h2><span>+</span>
+                    <h4>ADOPTED DOGS</h4>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter-box">
+                    <i class="fa fa-city"></i>
+                    <h2 class="counter">35</h2><span>+</span>
+                    <h4>VISITED CITY</h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="script.js"></script>   
+    <script>
+        jQuery(document).ready(function($){
+            $('.counter') .counterUp({
+                delay:10,
+                time:1000
+            });
+        }); 
+    </script>
+    <script src="jquery.counterup.min.js"></script>
+</body>
+</html>  
